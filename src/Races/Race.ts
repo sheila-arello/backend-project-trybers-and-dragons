@@ -1,10 +1,10 @@
-abstract class Race {
-  // private static count: number;
-  private _maxLifePoints: number;
+export default abstract class Race {
+  protected _maxLifePoints: number;
+  // private static _racesInstancesCount = 0;
 
   constructor(
-    private readonly _name: string = '',
-    private readonly _dexterity: number = 0,
+    protected _name: string = '',
+    protected _dexterity: number = 0,
   ) { 
     this._maxLifePoints = 0;
   }
@@ -23,5 +23,3 @@ abstract class Race {
 
   public abstract get maxLifePoints(): number;
 }
-
-export default Race;
