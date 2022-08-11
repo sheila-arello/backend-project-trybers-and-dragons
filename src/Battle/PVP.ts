@@ -10,9 +10,13 @@ export default class PVP extends Battle {
   // ganhou, e se retornar -1 a vitória foi do player que não foi o parâmetro do super;
 
   fight(): number {
+    console.log(`Player1: ${this.player.lifePoints}`);
+    console.log(`Player2: ${this.player2.lifePoints}`);
     while (this.player.lifePoints > 0 && this.player2.lifePoints > 0) { 
       this.player.attack(this.player2);
       this.player2.attack(this.player);
+      console.log(`Player1: ${this.player.lifePoints}`);
+      console.log(`Player2: ${this.player2.lifePoints}`);
     }
     return (this.player2.lifePoints === -1) ? 1 : -1;
   }
