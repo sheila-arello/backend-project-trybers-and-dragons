@@ -11,28 +11,28 @@ export default class PVE extends Battle {
     this.monsters = monsters;
   }
 
-  private monstersLifeEnds(): boolean {
-    // const legion = this.monsters.map((monster) => {
-    //   if (monster.lifePoints === -1) return true;
-    //   return false;
-    // });
-    // return (legion.every((leg) => leg === true));
+  private monstersLifeEnds(): number {
+    // Retorna 0 se todos mortos ou > 0 se existe algum vivo
     const legion = this.monsters
       .filter((monster) => (monster.lifePoints > 0));
-    console.log(legion);
-    return !legion;
+    return legion.length;
+  }
+
+  attackEachOther() {
+    this.monsters.map((monster) => {
+      if (monster.lifePoints > 0) {
+        monster.attack(this.player);
+        this.player.attack(monster);
+      }
+      return null;
+    });
   }
 
   // Should return 1 if player wins, -1 otherwise
   fight(): number {
-    // while (this.player.lifePoints > 0 && !this.monstersLifeEnds()) { 
-    //   this.monsters.map((monster) => {
-    //     monster.attack(this.player);
-    //     this.player.attack(monster);
-
-    //     return null;
-    //   });
-    // }
+    while (this.player.lifePoints > 0 && this.monstersLifeEnds() > 0) { 
+      this.attackEachOther();
+    }
     return (this.player.lifePoints === -1) ? -1 : 1;
   }
 }
