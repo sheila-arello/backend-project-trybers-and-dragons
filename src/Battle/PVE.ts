@@ -4,7 +4,6 @@ import Battle from './Battle';
 export default class PVE extends Battle {
   constructor(
     protected player1: Fighter,
-    // protected monsters: Fighter[] | SimpleFighter[],
     protected monsters: (Fighter | SimpleFighter)[],
   ) { 
     super(player1);

@@ -1,5 +1,5 @@
 import Archetype, { Mage } from './Archetypes';
-import Energy, { EnergyType } from './Energy';
+import Energy from './Energy';
 import { SimpleFighter } from './Fighter';
 import Fighter from './Fighter/Fighter';
 import Race, { Elf } from './Races';
@@ -13,10 +13,7 @@ export default class Character implements Fighter {
   private _archetype: Archetype;
   private maxLifePoints: number;
   private _dexterity: number;
-  private _energy: {
-    amount: number,
-    type_: EnergyType,
-  };
+  private _energy: Energy;
 
   constructor(public name: string) {
     this.name = name;
