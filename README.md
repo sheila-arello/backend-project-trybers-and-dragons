@@ -1,4 +1,3 @@
-# 🚧 README em construção 🚧
 
 <!-- Olá, Tryber!
 # 🚧 README em construção 🚧
@@ -15,6 +14,7 @@ Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua cr
 - quais arquivos/pastas foram desenvolvidos pela Trybe.
 
 Nesse projeto, você vai construir **um back-end dockerizado utilizando modelagem de dados através do Sequelize**
+-->
 
 # ⚽ Trybe Futebol Clube ⚽
 Desenvolvido durante módulo de backend na Trybe | ago/2022.
@@ -22,64 +22,119 @@ Desenvolvido durante módulo de backend na Trybe | ago/2022.
 ## :page_with_curl: Sobre o Projeto
 
 <details>
-  <summary markdown="span"><strong>O que foi desenvolvido ou o que é a aplicação</strong></summary><br />
-  Nesse projeto desenvolvemos  **um back-end dockerizado utilizando modelagem de dados através do Sequelize**
+  <summary markdown="span"><strong>A aplicação</strong></summary><br />
+    <!-- ![Exemplo app front](assets/front-example.png) -->
+
+  O `TFC` é um site informativo sobre partidas e classificações de futebol! ⚽️
+</details>
+<details>
+  <summary markdown="span"><strong>O que foi desenvolvido</strong></summary><br />
+
+  Para esse projeto, foi desenvolvida uma API RESTful com aplicações frontend e backend integradas através do docker-compose, que consomem um banco de dados.
+
+  Construí um __backend dockerizado utilizando modelagem de dados através do Sequelize__.
+
+  Foram respeitadas regras de negócio pré definidas pela Trybe, onde precisei garantir que a API desenvolvida fosse capaz de ser consumida pelo frontend provido dentro do projeto.
+  
+  Destaco aqui, uma das regras principais nesse desenvolvimento. Para adicionar uma partida ou fazer alterações, o usuário deve estar logado. __Essa verificação é feita através de um token válido.__
+  
+  Além disso, as tabelas `teams` e `matches` contam com um relacionamento para executar as devidas atualizações das partidas.
 
 </details>
 <details>
 <summary><strong>Observações</strong></summary><br />
-* texto
+  
+* Para esse projeto, foi diponibilizado pela Trybe toda a parte de frontend, sendo minha responsabilidade a criação do backend.
+* O projeto foi desenvolvido com base em requisitos definidos pela Trybe dentro de um tempo pré determinado.
 </details>
+
+## ⚔️ Desafios
 <details>
-<summary><strong>Desafios</strong></summary><br />
-* texto
+<summary><strong>Principais Desafios</strong></summary><br />
+  
+* Utilização do typescript com POO: projeto referencia para firmar esses conceitos
+* Conceitos de __SOLID__: desenvolver o projeto buscando utilizar ao máximo esses conceitos.
+* LeaderBoard: Estruturar uma __query SQL__ para que, em uma única requisição, retornasse a classificação geral dos jogos.
 </details>
 
 ## :man_technologist: Habilidades Desenvolvidas
-* Hard e soft? principalmente.
-* Pedir ajuda.
+<details>
+<summary><strong>Hard Skills</strong></summary><br />
+  
+* Principais hard skills desenvolvidas:
+  * TypeScript
+  * POO
+  * SOLID
+</details>
 
 <details>
-  <summary markdown="span"><strong>:brazil: Português</strong></summary><br />
+<summary><strong>Soft Skills</strong></summary><br />
   
-* Desenvolver uma aplicação React
-* Criar e reutilizar componentes
-* Reagir a interações do usuário manipulando estados e propriedades de acordo com eventos
-* Usar a biblioteca React Router para lidar com navegação entre páginas
-* Usar a biblioteca Redux para gerenciamento de estado
-<br />
+* Inteligência Emocional
+* Autoliderança
+* Gestão do Tempo
+* Compartilhar conhecimentos com os demais alunos da Trybe
+* Recorrer a mentorias para esclarecimento de dúvidas
 </details>
 
 ## :memo: Metodologias
+<details>
+<summary><strong>Metodologias utilizadas</strong></summary><br />
 
-* Mobile First
+* SOLID
+* POO
+* AGILE
+</details>
 
 ## :hammer_and_wrench: Ferramentas
 
-* HTML5
-* CSS3
-* JavaScript ES6+
-* React.js
-* React Router v6
-* Redux.js
-* React Testing Library (RTL)
-* React Icons (icon library)
-* Sass
-* GitHub Pages
+<details>
+<summary><strong>Basicas</strong></summary><br />
+  
+* TypeScript
+* Node.js
+* cors
+* dotenv
+* express
+* express-async-errors
+  
+</details>
+<details>
+<summary><strong>Validações</strong></summary><br />
+  
+* bcryptjs
+* JWT
+* Joi
+</details>
+<details>
+<summary><strong>Banco de Dados</strong></summary><br />
+  
+* MySQL
+* Sequelize
+</details>
+<details>
+<summary><strong>Testes</strong></summary><br />
+  
+* Jest
+* Mocha
+* Chai
+</details>
 
-## Evolução do projeto
-Itens que foram mapeados para evolução do projeto.
-<br />
-Refatoração: manipulação de erros e validações.
-<br />
-testes: fazer novos testes para garantir a excelencia da aplicação.
-<br />
+## 📈 Evolução do projeto
+<details>
+<summary><strong>Metodologias utilizadas</strong></summary><br />
 
-## Instalação do Projeto
+* 
+* 
+* testes: atingir cobertura de 100%
+</details>
+
+## 🚧 Instalação do Projeto em construção 🚧
+<!--
 <details>
   <summary markdown="span"><strong>Tutorial para rodar localmente</strong></summary><br />
-
-Após cada um dos passos, haverá um exemplo do comando a ser digitado para fazer o que está sendo pedido, caso tenha dificuldades e o exemplo não seja suficiente, não hesite em me contatar em _johnatas.henrique@gmail.com_.
+  
+Após cada um dos passos, haverá um exemplo....
 
 1. Abra o terminal e crie um diretório no local de sua preferência com o comando **mkdir**:
 ```javascript
@@ -90,7 +145,7 @@ Após cada um dos passos, haverá um exemplo do comando a ser digitado para faze
 2. Entre no diretório que acabou de criar e depois clone o projeto:
 ```javascript
   cd projetos
-  git clone git@github.com:johnatas-henrique/fake-racer.git
+  git clone git@github.com:...
 ```
 
 
@@ -98,12 +153,13 @@ Após cada um dos passos, haverá um exemplo do comando a ser digitado para faze
 
 Se você apenas der duplo clique no arquivo **index.html**, o projeto não vai abrir em seu navegador e se você abrir o console, verá um problema de **CORS**.
 </details>
-
-## Como utilizar o projeto (operacional)
+-->
+## 🚧 Como utilizar o projeto (operacional) em construção 🚧
+<!--
 Quais as possibilidades de uso da aplicação.
 <br />
 front > explicação de como funciona a interface.
 <br />
 back > insomia, como funciona o crud  e descrição das rotas. Tabela de rotas? (opção de visualização)
-
 -->
+
